@@ -13,8 +13,12 @@ public class prog54c {
         double area = pi * Math.pow(radius, 2);
         double circu = 2 * pi * radius;
 
-        System.out.println("area: " + area);
-        System.out.println("circumference: " + circu);
+        System.out.printf("area: %.3f/n", area);
+        System.out.println();
+        System.out.printf("circumference: %.3f/n", circu);
         input.close();
     }
 }
+//enter radius: 3.712
+//area: 43.288
+//circumference: 23.323

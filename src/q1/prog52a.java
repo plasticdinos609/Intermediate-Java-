@@ -21,3 +21,9 @@ public class prog52a {
         input.close();
     }
 }
+/*
+ * Enter Length: 5
+ * Enter Width: 10
+ * Area: 50
+ * Perimeter: 30
+ */
