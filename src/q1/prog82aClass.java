@@ -41,5 +41,5 @@ public class prog82aClass {
 /*
 enter speed limit: 30
 enter speed gone: 42
-ticket: $80.00
+//ticket: $80.00
 */

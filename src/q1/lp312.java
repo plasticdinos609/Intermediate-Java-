@@ -9,14 +9,15 @@ public class lp312 {
 
         public clpl312(double[] expenses) {
             this.expenses = expenses;
+            calc();
         }
 
         private void calc(){
             double total = 0;
             for (double expense: expenses)
                 total += expense;
-            percentbudget = new double[expenses.length]
-            for (int x=0; x >expenses.length; x++)
+            percentbudget = new double[expenses.length];
+            for (int i=0; i >expenses.length; i++)
                 percentbudget[i] = (expenses[i]/total)*100;
         }
 
@@ -33,7 +34,7 @@ public class lp312 {
     }
 
     public static void main(String[] args) {
-        System.out.print("enter the amount spent last month on the following items");
+        System.out.println("enter the amount spent last month on the following items");
         double food = inputDouble("food: ");
         double clothing = inputDouble("clothing: ");
         double entertainment = inputDouble("entertainment: ");
@@ -42,7 +43,10 @@ public class lp312 {
         var expenses = new double[] { food, clothing, entertainment, rent };
         var helper = new clpl312(expenses);
         var percents = helper.getPercentBudget();
-        System.out.printf("Category\t\tbudget");
-        System.out.printf("%s\t\t\t%.2f");
+        System.out.printf("\nCategory\t\tbudget");
+        System.out.printf("%s\t\t\t%.2f%%\n", "food: ", percents[0]);
+        System.out.printf("%s\t\t%.2f%%\n", "clothing: ", percents[1]);
+        System.out.printf("%s\t%.2f%%\n", "entertainment: ", percents[2]);
+        System.out.printf("%s\t\t\t%.2f%%\n", "rent: ", percents[3]);
     }
 }
