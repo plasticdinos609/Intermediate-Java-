@@ -17,7 +17,7 @@ public class lp313 {
         double interest = input.nextDouble();
         System.out
                 .println("the suggested principal is: " + (simpleinterest(principle, years, interest)));
-
+input.close();
     }
 
     public static double simpleinterest(int princ, int year, double interest) {

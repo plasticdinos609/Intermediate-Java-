@@ -24,6 +24,7 @@ public class prog464d {
                 }
                 System.out.println();
             }
+            input.close();
         } catch (IOException e) {
 
         }
