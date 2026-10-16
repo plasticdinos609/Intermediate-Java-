@@ -1,13 +1,12 @@
 package q1;
 
-import java.io.*;
 import java.util.*;
-import java.text.*;
+
 
 public class lp313 {
 
     public static void main(String[] args) {
-        var moneyformat = new DecimalFormat("$#,###.00");
+        //var moneyformat = new DecimalFormat("$#,###.00");
         Scanner input = new Scanner(System.in);
         System.out.print("enter the desired value:");
         int principle = input.nextInt();
