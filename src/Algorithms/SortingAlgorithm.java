@@ -1,6 +1,4 @@
 package Algorithms;
-import java.util.Arrays;
-import java.util.Random;
 
 public class SortingAlgorithm {
      public static <T extends Comparable<T>> void swap(T[] arr, int i, int j) {
