@@ -34,7 +34,7 @@ public class prog460a {
                 System.out.println(pos == -1? "number does not occur\n":"your number occurs at index: "+(pos+1)+"\n");
 
             }while (num!=-1);
-
+            input.close();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
