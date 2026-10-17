@@ -53,11 +53,13 @@ public class dynamicArrayLab {
     
         }
 }
-/*========== Dynamic Array ==========
+/*
+========== Dynamic Array ==========
 Dynamic Array add: 14.32736 ms
 Dynamic Array sort: 24811.665146 ms
 Dynamic Array remove: 33171.372737 ms
 =========== Array  List ===========
 Dynamic Array add: 33171.372737 ms
 Dynamic Array sort: 33171.372737 ms
-Dynamic Array remove: 33171.372737 ms */
+Dynamic Array remove: 33171.372737 ms
+ */
