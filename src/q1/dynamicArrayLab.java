@@ -33,7 +33,7 @@ public class dynamicArrayLab {
         for (int i = 0; i < 100_000; i++)
             ArrayL.add((int)(Math.random() * 100_000));
         long quit = System.nanoTime();
-        System.out.println("Dynamic Array add: " + (end-start)/1e6 + " ms");  // ns to ms
+        System.out.println("Dynamic Array add: " + (quit-begin)/1e6 + " ms");  // ns to ms
 
         begin = System.nanoTime();
         int looper=0;
@@ -43,23 +43,23 @@ public class dynamicArrayLab {
             }
         SortingAlgorithm.insertionSort(arr);
         quit = System.nanoTime();
-        System.out.println("Dynamic Array sort: " + (end-start)/1e6 + " ms");
+        System.out.println("Dynamic Array sort: " + (quit-begin)/1e6 + " ms");
 
         begin = System.nanoTime();
         for (int i = 0; i < 100_000; i++)
             ArrayL.remove(0);
         quit = System.nanoTime();
-        System.out.println("Dynamic Array remove: " + (end-start)/1e6 + " ms");
+        System.out.println("Dynamic Array remove: " + (quit-begin)/1e6 + " ms");
     
         }
 }
 /*
 ========== Dynamic Array ==========
-Dynamic Array add: 14.32736 ms
-Dynamic Array sort: 24811.665146 ms
-Dynamic Array remove: 33171.372737 ms
+Dynamic Array add: 13.827698 ms
+Dynamic Array sort: 22143.932949 ms
+Dynamic Array remove: 30173.157847 ms
 =========== Array  List ===========
-Dynamic Array add: 33171.372737 ms
-Dynamic Array sort: 33171.372737 ms
-Dynamic Array remove: 33171.372737 ms
+Dynamic Array add: 10.256648 ms
+Dynamic Array sort: 17907.837409 ms
+Dynamic Array remove: 360.475425 ms
  */
