@@ -20,9 +20,9 @@ public class selectionsort {
         }
 
         System.out.println();
-        sorter(arr);
+        SortingAlgorithm.selectionSort(arr);
         for (int i = 0; i < ArrayL.size(); i++) {
-            System.out.print(arr[i]);
+            System.out.print(arr[i]+" ");
         }
 
     }

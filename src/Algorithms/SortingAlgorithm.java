@@ -32,18 +32,17 @@ public class SortingAlgorithm {
 
     public static <T extends Comparable<T>> void selectionSort(T[] arr) {
         //FIX ME LATER
-        String[] pos = new String[2];
-        for (int x = 0; x < arr.length - 1; x++) {
-            for (int y = 0; y < arr.length - x - 1; y++) {
-                if (arr[x].compareTo(arr[x + 1]) > 0) {
-                    pos[0] = "" + arr[x + 1];
-                    pos[1] = "" + x;
+        for (int x = 0; x < arr.length; x++) {
+            int pos = x;
+            for (int y = x+1; y < arr.length; y++) {
+                if (arr[pos].compareTo(arr[y]) > 0) {
+                    pos=y;
                 }
-                T temp = arr[0];
-                arr[0]= arr[Integer.parseInt(pos[1])];
-                arr[Integer.parseInt(pos[1])]=temp;
 
             }
+                T temp = arr[x];
+                arr[x]= arr[(pos)];
+                arr[(pos)]=temp;
 
         }
     }
