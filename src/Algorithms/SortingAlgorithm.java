@@ -31,7 +31,7 @@ public class SortingAlgorithm {
     }
 
     public static <T extends Comparable<T>> void selectionSort(T[] arr) {
-        //FIX ME LATER
+        
         for (int x = 0; x < arr.length; x++) {
             int pos = x;
             for (int y = x+1; y < arr.length; y++) {
