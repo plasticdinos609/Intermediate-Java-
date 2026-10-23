@@ -31,23 +31,36 @@ public class SortingAlgorithm {
     }
 
     public static <T extends Comparable<T>> void selectionSort(T[] arr) {
-        
+
         for (int x = 0; x < arr.length; x++) {
             int pos = x;
-            for (int y = x+1; y < arr.length; y++) {
+            for (int y = x + 1; y < arr.length; y++) {
                 if (arr[pos].compareTo(arr[y]) > 0) {
-                    pos=y;
+                    pos = y;
                 }
 
             }
-                T temp = arr[x];
-                arr[x]= arr[(pos)];
-                arr[(pos)]=temp;
+            T temp = arr[x];
+            arr[x] = arr[(pos)];
+            arr[(pos)] = temp;
 
         }
     }
 
     public static <T extends Comparable<T>> void shellSort(T[] arr) {
-        //DO LATER
+        int gap = arr.length / 2;
+        while (gap >= 1) {
+            for (int y = 0; y < arr.length - gap; y++) {
+                int t = 0;
+                while ((y - t >= 0) && arr[y - t].compareTo(arr[y + gap - t]) > 0) {
+                    T temp = arr[y - t];
+                    arr[y - t] = arr[y + gap - t];
+                    arr[y + gap - t] = temp;
+                    t += gap;
+                }
+            }
+            gap /= 2;
+        }
+        // selectionSort(arr);
     }
 }
