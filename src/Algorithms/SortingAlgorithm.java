@@ -61,6 +61,6 @@ public class SortingAlgorithm {
             }
             gap /= 2;
         }
-        // selectionSort(arr);
+      
     }
 }
