@@ -251,7 +251,41 @@ public class intLinkedList implements Iterable<Integer> {
         }
     }
 
-    public int lose58(){
-        // yupp
+    public int lose58() {
+        Node current = head;
+        int fiftyeight = 0;
+        if (current.getdata() == 58) {
+            current.next = head;
+            fiftyeight++;
+        }
+        while (current.next != null) {
+            if (current.next.getdata() == 58) {
+                current.next = null;
+                current.next = current.next.next;
+                fiftyeight++;
+            }
+        }
+        return fiftyeight;
+    }
+
+    public int getEvenCount() {
+        int count = 0;
+        Node current = head;
+        while (current.next != null) {
+            if (current.getdata() % 2 == 0) {
+                count++;
+            }
+
+        }
+        return count;
+    }
+
+    public void killOdds(){
+        Node current = head;
+        while (current.next != null) {
+            if (current.next.getdata()%2!=0){
+                current.next=current.next.next;
+            }
+        }
     }
 }
