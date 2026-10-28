@@ -23,20 +23,27 @@ public class bluePelican378 {
         Scanner kbReader = new Scanner(System.in);
         System.out.print("What is the slope of your line? ");
         double slope = kbReader.nextDouble();
+
         System.out.print("What is the y-intercept of your line? ");
         double yIntc = kbReader.nextDouble();
 
         System.out.println("Slope of this line is: " + slope);
         System.out.println("Y-intercept of this line is: " + yIntc);
         System.out.println("Root of this line is: " + getRoot(slope, yIntc));
+
         System.out.print("\nWhat is an x value for which you wish to solve for y? ");
         double x = kbReader.nextDouble();
+
         double yValue = findy(slope, yIntc, x);
         System.out.println("The y value corresponding to x = " + x + " is " + yValue);
+
         System.out.print("\nWhat is a y value for which you wish to solve for x? ");
         double y = kbReader.nextDouble();
+
         double xValue = findx(slope, yIntc, y);
         System.out.println("The x value corresponding to y = " + y + " is " + xValue);
+        
+        kbReader.close();
     }
 }
 
