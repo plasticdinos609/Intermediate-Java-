@@ -31,6 +31,7 @@ public class msoe2007prob3 {
         } else {
             System.out.println("Error: please enter angle values that add to 180");
         }
+        input.close();
     }
 }
 /*
