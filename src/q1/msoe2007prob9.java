@@ -30,7 +30,7 @@ public class msoe2007prob9 {
             }
 
             for (int x = 0; x < 5; x++) {
-                System.out.print((x * width) + "-" + (x * width + 1));
+                System.out.print((x * width) + "-" + (x * width + 1)+": ");
                 for (int y = 0; y < values[x]; y++) {
 
                     System.out.print("*");
@@ -44,3 +44,10 @@ public class msoe2007prob9 {
 
     }
 }
+/*
+0-1: ***
+2-3: ******
+4-5: ****
+6-7: ****
+8-9: *
+*/
