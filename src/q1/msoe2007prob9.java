@@ -37,7 +37,7 @@ public class msoe2007prob9 {
                 }
                 System.out.println();
             }
-
+            file.close();
         } catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }

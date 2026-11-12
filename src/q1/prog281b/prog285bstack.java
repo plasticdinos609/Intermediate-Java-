@@ -2,7 +2,6 @@ package q1.prog281b;
 
 import java.io.File;
 import java.io.IOException;
-
 import java.util.Scanner;
 import dataStructures.Stack;
 
