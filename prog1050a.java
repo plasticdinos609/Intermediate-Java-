@@ -3,7 +3,8 @@ package q1;
 import java.io.*;
 import java.util.*;
 import java.text.*;
-
+@SuppressWarnings("is not applicable") 
+ 
 class salesRecord {
     public String[] fields;
 
